@@ -77,14 +77,14 @@ if test "$PHP_RPM" != "no"; then
       if test -f $i/lib$j.$SHLIB_SUFFIX_NAME -o -f $i/lib$j.a ; then
         RPM_LIB_DIR=$i
         break
-      elif test -f $i/lib/lib$j.$SHLIB_SUFFIX_NAME -o -f $i/lib/lib$j.a ; then
-        RPM_LIB_DIR=$i/lib
+      elif test -f $i/$PHP_LIBDIR/lib$j.$SHLIB_SUFFIX_NAME -o -f $i/$PHP_LIBDIR/lib$j.a ; then
+        RPM_LIB_DIR=$i/$PHP_LIBDIR
         break
-      elif test -f $i/lib/$fixdir/lib$j.$SHLIB_SUFFIX_NAME -o -f $i/lib/$fixdir/lib$j.a ; then
-        RPM_LIB_DIR=$i/lib/$fixdir
+      elif test -f $i/$PHP_LIBDIR/$fixdir/lib$j.$SHLIB_SUFFIX_NAME -o -f $i/$PHP_LIBDIR/$fixdir/lib$j.a ; then
+        RPM_LIB_DIR=$i/$PHP_LIBDIR/$fixdir
         break
-      elif test -f $i/$fixdir/lib/lib$j.$SHLIB_SUFFIX_NAME -o -f $i/$fixdir/lib/lib$j.a ; then
-        RPM_LIB_DIR=$i/$fixdir/lib
+      elif test -f $i/$fixdir/$PHP_LIBDIR/lib$j.$SHLIB_SUFFIX_NAME -o -f $i/$fixdir/$PHP_LIBDIR/lib$j.a ; then
+        RPM_LIB_DIR=$i/$fixdir/$PHP_LIBDIR
         break
       fi
     done
