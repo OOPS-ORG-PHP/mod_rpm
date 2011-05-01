@@ -1,4 +1,4 @@
-/* $Id: parse.c,v 1.1.1.1 2005-03-28 12:10:34 oops Exp $ */
+/* $Id$ */
 
 #ifdef HAVE_CONFIG_H
 #include "config.h"

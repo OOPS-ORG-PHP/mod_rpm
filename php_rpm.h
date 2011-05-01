@@ -15,7 +15,7 @@
   | Author: JoungKyun.Kim <http://www.oops.org>                          |
   +----------------------------------------------------------------------+
 
-  $Id: php_rpm.h,v 1.1.1.1 2005-03-28 12:10:34 oops Exp $
+  $Id$
 */
 
 #ifndef PHP_RPM_H
